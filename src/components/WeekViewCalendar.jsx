@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Calendar, momentLocalizer } from "react-big-calendar";
-// import moment from "moment";
+import moment from "moment";
 import "../calendar.css";
 import { supabase } from "../supabaseClient";
 
