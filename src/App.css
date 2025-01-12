@@ -1,0 +1,314 @@
+/* General Styling */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+}
+
+#root {
+  text-align: center;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255, 145, 145, 0.95);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding-left: 10px;
+}
+
+.divider {
+  width: 50px;
+}
+
+.navbar-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links li {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #007bff;
+}
+
+/* Carousel Styling */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-height: 900px;
+}
+
+.carousel-images {
+  display: flex;
+  animation: slide 10s infinite;
+}
+
+.carousel-images img {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* Fade-to-black effect */
+.carousel-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 200px; /* Slightly increased height for a smoother fade */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.4) 20%,
+    rgba(0, 0, 0, 0.6) 40%,
+    black 100%
+  );
+  pointer-events: none;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Calendar Section */
+.homepage-container {
+  margin-top: 50px;
+  padding: 20px;
+  background: rgb(0, 0, 0);
+}
+
+.homepage-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.calendar-container {
+  display: inline-block;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.react-calendar {
+  border: none;
+}
+
+.react-calendar__tile--active {
+  background-color: #007bff !important;
+  color: white !important;
+  border-radius: 50%;
+}
+
+.event-dot {
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+/* Events List */
+.events-container {
+  margin-top: 30px;
+}
+
+.events-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.events-list {
+  list-style: none;
+  padding: 0;
+}
+
+.event-item {
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  color: black;
+}
+
+/* Container for the calendar */
+.calendar-container {
+  height: 90vh;
+  margin: 20px;
+  background: #fdf7f7; /* Light pink background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  padding: 20px;
+  width: 80%;
+}
+
+/* Custom toolbar styling */
+.custom-toolbar {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(45deg, #ff6f61, #ff9a8b);
+  color: white;
+  border-radius: 8px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Calendar styling */
+.rbc-calendar {
+  background: transparent; /* Transparent to blend with the container */
+  border: none;
+  color: #333;
+  border-radius: 10px;
+}
+
+/* Week view styling */
+.rbc-time-view {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.rbc-header {
+  background: #ff9a8b;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+/* Event block styling */
+.rbc-event {
+  background: #ff6f61 !important;
+  color: rgb(0, 0, 0) !important;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.9rem;
+}
+
+/* Timeslot background */
+.rbc-time-slot {
+  background: #ffe5e5; /* Subtle pink for timeslots */
+}
+
+/* Grid line styling */
+.rbc-day-slot .rbc-time-slot {
+  border-color: rgba(255, 99, 99, 0.5); /* Light red grid lines */
+}
+
+/* Current time indicator */
+.rbc-current-time-indicator {
+  background: #ff4b4b; /* Bright red for current time */
+}
+
+/* Hover effect for events */
+.rbc-event:hover {
+  background: #ff4b4b !important;
+  cursor: pointer;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  width: 400px;
+  color: black;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content input {
+  width: 90%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.modal-content button {
+  margin: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fc8db0;
+  color: white;
+  cursor: pointer;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.title-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 15%;
+}
+
+.heart {
+  height: 60px;
+  background-color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.divider {
+  width: 2px;
+  height: 80px;
+  background-color: white;
+  padding-bottom: 10px;
+}
+
+.navbar-title {
+  margin-bottom: 10px;
+}
