@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { supabase } from "../supabaseClient";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEdit, faTrash, faUser } from "@fortawesome/free-solid-svg-icons";
+import "@fortawesome/react-fontawesome";
+// import { faEdit, faTrash, faUser } from "@fortawesome/free-solid-svg-icons";
 import "../AdminConsole.css";
 
 const AdminConsole = () => {
