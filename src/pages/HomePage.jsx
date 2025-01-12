@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "react-calendar/dist/Calendar.css";
+// import "react-calendar/dist/Calendar.css";
 import { supabase } from "../supabaseClient";
 import "../App.css";
 import WeekViewCalendar from "../components/WeekViewCalendar";
