@@ -19,13 +19,13 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: rgba(255, 145, 145, 0.95);
+  background-color: #ffffff;
 }
 
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }

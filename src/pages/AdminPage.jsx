@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { supabase } from "../supabaseClient";
 import { useNavigate } from "react-router-dom";
 import AdminConsole from "../components/AdminConsole";
+import Navbar from "../components/Navbar";
 
 const AdminPage = () => {
   const [loading, setLoading] = useState(true);
@@ -24,8 +25,13 @@ const AdminPage = () => {
 
   return (
     <div className="admin-main">
-      <h1>Admin Dashboard</h1>
-      <AdminConsole />
+      <div>
+        <Navbar />
+      </div>
+      <div className="console">
+        <h1>Admin Dashboard</h1>
+        <AdminConsole />
+      </div>
     </div>
   );
 };

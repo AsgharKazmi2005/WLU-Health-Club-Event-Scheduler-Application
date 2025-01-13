@@ -4,6 +4,10 @@
 
 .admin-main {
   width: 100%;
+}
+
+.admin-main .console {
+  width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -113,7 +117,7 @@
   align-items: center;
 }
 
-.admin-main ul {
+.admin-console ul {
   background-color: #110f0f;
   padding: 10px;
   border-radius: 10px;

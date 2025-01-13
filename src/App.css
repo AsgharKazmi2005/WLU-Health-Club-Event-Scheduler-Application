@@ -13,7 +13,7 @@ body {
 
 /* Navbar Styling */
 .navbar {
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   background: rgba(255, 145, 145, 0.95);
@@ -21,9 +21,18 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  padding-left: 10px;
+  box-shadow: 10px 4px 6px rgba(0, 0, 0, 1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.603);
+  margin-right: 100px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title-cont {
+  display: flex;
+  align-items: center;
 }
 
 .divider {
@@ -38,15 +47,42 @@ body {
 .navbar-links {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 1rem;
+  margin: 0;
+  margin-right: 20px;
+  padding: 0;
 }
 
 .navbar-links li {
   cursor: pointer;
-  font-size: 1rem;
-  color: #007bff;
 }
 
+.nav-link {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.7s ease;
+}
+
+.nav-link-footer {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  background: rgba(255, 255, 255);
+}
+
+.nav-link.active {
+  background: #ffffff;
+  color: rgba(255, 145, 145, 0.95);
+}
 /* Carousel Styling */
 .carousel {
   position: relative;
@@ -122,13 +158,13 @@ body {
 }
 
 .react-calendar__tile--active {
-  background-color: #007bff !important;
+  background-color: #ffffff !important;
   color: white !important;
   border-radius: 50%;
 }
 
 .event-dot {
-  color: #007bff;
+  color: #ffffff;
   font-size: 1.5rem;
 }
 
@@ -311,4 +347,36 @@ body {
 
 .navbar-title {
   margin-bottom: 10px;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.footer a {
+  color: #ff6347; /* Tomato color for links */
+  text-decoration: none;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #ffa07a; /* Lighter tomato on hover */
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  font-size: 0.9rem;
 }
