@@ -40,21 +40,12 @@ const HomePage = () => {
     <div>
       <Navbar />
 
-      {/* Image Carousel */}
-      <div className="carousel">
-        <div className="carousel-images">
-          <img
-            src="https://images4.alphacoders.com/125/thumb-1920-1254199.jpg"
-            alt="Slide 1"
-          />
-          <img
-            src="https://images4.alphacoders.com/106/1062317.jpg"
-            alt="Slide 2"
-          />
-          <img src="https://i.redd.it/f9zmgpgzlmi71.jpg" alt="Slide 3" />
-        </div>
-        <div className="carousel-fade"></div>
+      {/* Site Development Message */}
+      <div className="site-development-message">
+        <h1>Site in Development</h1>
+        <p>Check back later for updates!</p>
       </div>
+
       <Footer />
     </div>
   );
