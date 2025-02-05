@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import logo from "../images/logo.webp";
 
 function Navbar() {
   return (
@@ -7,13 +8,7 @@ function Navbar() {
       {/* Navbar */}
       <nav className="navbar">
         <div className="title-cont">
-          <img
-            className="heart"
-            src="https://dn9tckvz2rpxv.cloudfront.net/american-heart-association/img2/AHA_H&T_HEX.png"
-            alt="Heart Logo"
-          />
-          <div className="divider"></div>
-          <h1 className="navbar-title">WLU Heart Club</h1>
+          <img className="heart" src={logo} alt="Heart Logo" />
         </div>
 
         {/* Navbar Links */}
