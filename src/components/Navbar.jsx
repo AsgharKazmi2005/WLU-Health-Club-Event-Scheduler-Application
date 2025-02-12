@@ -4,7 +4,7 @@ import logo from "../images/logo.webp";
 
 function Navbar() {
   return (
-    <div>
+    <div className="nav-main">
       {/* Navbar */}
       <nav className="navbar">
         <div className="title-cont">
@@ -55,6 +55,33 @@ function Navbar() {
           </li>
         </ul>
       </nav>
+
+      {/* Thin Line Interest Form Prompt */}
+      <div className="interest-form-bar">
+        <strong>
+          <i>
+            Interested in joining? Fill out our{" "}
+            <a
+              href="https://docs.google.com/forms/d/1YMaP0xsD7NltS4F9Ka9lN7hfFeIkibwkDoI6TUhoGd8/viewform?edit_requested=true"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="interest-link"
+            >
+              interest form ❤️
+            </a>
+            {" "}| apply to join our {" "}
+            <a
+              href="https://docs.google.com/forms/d/1JHTQW4y0IgU-nAFokCT1vvQjo60L-s11GDOgo_JqWqs/edit"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="interest-link"
+            >
+              BLS Certification Class 🎟️
+            </a>
+          </i>
+        </strong>
+      </div>
+
     </div>
   );
 }
