@@ -9,7 +9,7 @@ function ContactPage() {
       <div className="calendar-main flex flex-col items-center min-h-screen bg-black text-white">
         <div className="contact-form bg-[#1a1a1a] shadow-lg rounded-lg p-8 mt-10 w-full max-w-lg">
           <h2 className="text-3xl font-bold text-center mb-6 text-[rgba(255,145,145,0.95)]">Contact Us</h2>
-          <form action="https://formsubmit.co/wluheartclub@gmail.com" method="POST" className="space-y-4">
+          <form action="https://formsubmit.co/7da7c43e1f234e2e51c7abad9ea8c367" method="POST" className="space-y-4">
             <input type="hidden" name="_subject" value="New Contact Form Submission" />
             <input type="hidden" name="_captcha" value="false" />
             
