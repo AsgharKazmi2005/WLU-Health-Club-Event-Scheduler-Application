@@ -554,5 +554,21 @@ a {
   text-decoration: none;
 }
 
+.rightsize {
+  display: grid;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+}
 
+.portraits {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+
+.cnt {
+  width: 60%;
+}
 
