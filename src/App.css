@@ -572,3 +572,19 @@ a {
   width: 60%;
 }
 
+.image-gallery-container {
+  max-width: 750px;
+  margin-top: 50px;
+  padding-right: 20px;
+}
+
+/* Apply border-radius to gallery images */
+.image-gallery-slide img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Apply border-radius to thumbnails */
+.image-gallery-thumbnail img {
+  border-radius: 12px;
+}
