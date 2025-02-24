@@ -15,7 +15,7 @@ function ContactPage() {
       <Navbar />
               {/* Team Section */}
         <div className="portraits">
-        <div className="grid grid-cols-2 gap-6 mt-12 rightsize">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 gap-6 mt-12 rightsize">
           <Portrait image={Daniel} name="Daniel Volodarsky" description="Hey my name is Daniel Volodarsky and I am the Captain and Founder of the AHA Heart Club here at Washington and Lee University. I am a sophomore Biology and Music major on the pre-med track and am also proud to be an AHA licensed CPR Instructor. I love to talk to my friends, play violin, and study botany in my free time!" />
           <Portrait image={David} name="David Shepherd" description="My name is David Shepherd, and I’m the Vice President of the AHA Heart Club at Washington and Lee University. I’m a sophomore Neuroscience major looking for ways to improve my community, so I’m extremely grateful for the opportunity to spread health consciousness and skills to the people of Lexington, VA. When I’m not working, I like to draw, read, and explore new cultural experiences!" />
           <Portrait image={Bariz} name="Bariz Sultankhil" description="Hi, I'm Bariz Sultankhil! I live in Denver, Colorado, and I'm a neuroscience major on the pre-med track. I have a strong passion for research and healthcare.Outside of academics, I enjoy hiking, playing soccer, drawing, and learning new languages. I'm always excited to connect with others who share similar interests!" />

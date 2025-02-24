@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../images/logo.webp";
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+
   return (
     <div className="nav-main">
       {/* Navbar */}
@@ -11,14 +15,22 @@ function Navbar() {
           <img className="heart" src={logo} alt="Heart Logo" />
         </div>
 
+        {/* Hamburger Icon for Mobile */}
+        <div className="hamburger" onClick={toggleMenu}>
+          <span className={`line ${isOpen ? "open" : ""}`} />
+          <span className={`line ${isOpen ? "open" : ""}`} />
+          <span className={`line ${isOpen ? "open" : ""}`} />
+        </div>
+
         {/* Navbar Links */}
-        <ul className="navbar-links">
+        <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
           <li>
             <NavLink
               to="/"
               className={({ isActive }) =>
                 `nav-link nav-headers ${isActive ? "active" : ""}`
               }
+              onClick={() => setIsOpen(false)}
             >
               Home
             </NavLink>
@@ -29,6 +41,7 @@ function Navbar() {
               className={({ isActive }) =>
                 `nav-link nav-headers ${isActive ? "active" : ""}`
               }
+              onClick={() => setIsOpen(false)}
             >
               Calendar
             </NavLink>
@@ -39,6 +52,7 @@ function Navbar() {
               className={({ isActive }) =>
                 `nav-link nav-headers ${isActive ? "active" : ""}`
               }
+              onClick={() => setIsOpen(false)}
             >
               Contact
             </NavLink>
@@ -49,6 +63,7 @@ function Navbar() {
               className={({ isActive }) =>
                 `nav-link nav-headers ${isActive ? "active" : ""}`
               }
+              onClick={() => setIsOpen(false)}
             >
               Partners
             </NavLink>
@@ -69,7 +84,7 @@ function Navbar() {
             >
               interest form ❤️
             </a>
-            {" "}| apply to join our {" "}
+            {" "} | apply to join our {" "}
             <a
               href="https://docs.google.com/forms/d/1JHTQW4y0IgU-nAFokCT1vvQjo60L-s11GDOgo_JqWqs/edit"
               target="_blank"
@@ -81,7 +96,6 @@ function Navbar() {
           </i>
         </strong>
       </div>
-
     </div>
   );
 }

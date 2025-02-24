@@ -107,7 +107,7 @@ const HomePage = () => {
             showPlayButton={true}       // Show play/pause button
             showFullscreenButton={true} // Show fullscreen button
             showThumbnails={true}       // Show thumbnails
-            thumbnailPosition="left"
+            thumbnailPosition="bottom"
             lazyLoad={true}
             showNav={true}
             showBullets={true}
