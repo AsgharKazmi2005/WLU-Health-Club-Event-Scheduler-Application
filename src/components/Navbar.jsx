@@ -12,7 +12,9 @@ function Navbar() {
       {/* Navbar */}
       <nav className="navbar">
         <div className="title-cont">
-          <img className="heart" src={logo} alt="Heart Logo" />
+          <NavLink to="/" className="logo-active" onClick={() => setIsOpen(false)}>
+            <img className="heart" src={logo} alt="Heart Logo" />
+          </NavLink>
         </div>
 
         {/* Hamburger Icon for Mobile */}
