@@ -6,6 +6,7 @@ import AdminPage from "./pages/AdminPage";
 import CalendarPage from "./pages/CalendarPage";
 import ContactPage from "./pages/ContactPage";
 import PartnerPage from "./pages/PartnerPage";
+import ClassesPage from "./pages/ClassesPage";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/calendar" element={<CalendarPage />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/partners" element={<PartnerPage />} />
+        <Route path="/classes" element={<ClassesPage />} />
       </Routes>
     </Router>
   );

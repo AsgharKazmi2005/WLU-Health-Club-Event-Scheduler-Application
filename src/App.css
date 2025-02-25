@@ -1,7 +1,7 @@
 /* General Styling */
 body {
   font-family: "Arial", sans-serif;
-  background-color: rgb(0, 0, 0);
+  background-color: rgba(255, 145, 145, 0.95);
   margin: 0;
   padding: 0;
   color: #ffffff;
@@ -15,7 +15,7 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
-  background: rgba(255, 145, 145, 0.95);
+  background: rgb(106 62 62 / 95%);
   color: white;
   display: flex;
   justify-content: space-between;
@@ -58,7 +58,7 @@ a {
 
 .nav-link {
   font-size: 1rem;
-  color: white;
+  color: #a38383;
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
@@ -75,11 +75,11 @@ a {
 }
 
 .nav-link:hover {
-  background: rgba(255, 255, 255);
+  background: #523333ab;
 }
 
 .nav-link.active {
-  background: #ffffff;
+  background: #523333ab;
   color: rgba(255, 145, 145, 0.95);
 }
 
@@ -530,7 +530,6 @@ a {
   background-color: #ffdddd;
   padding: 3px 0;
   border-bottom: 1px solid #d6a4a4;
-  box-shadow: 10px 4px 6px rgba(0, 0, 0, 1);
   color: black;
 }
 
@@ -718,4 +717,8 @@ a {
 padding: 0 5px 0 5px;
 transition: .5s ease-in-out;
 
+}
+
+.cal-pink {
+  background-color: #e9acac;
 }

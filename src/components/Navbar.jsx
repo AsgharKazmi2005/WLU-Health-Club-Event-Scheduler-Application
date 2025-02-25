@@ -70,6 +70,17 @@ function Navbar() {
               Partners
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/classes"
+              className={({ isActive }) =>
+                `nav-link nav-headers ${isActive ? "active" : ""}`
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              Classes
+            </NavLink>
+          </li>
         </ul>
       </nav>
 
