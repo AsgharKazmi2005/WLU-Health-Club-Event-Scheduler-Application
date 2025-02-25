@@ -578,6 +578,10 @@ a {
   padding-right: 20px;
 }
 
+.image-gallery-container .image-gallery {
+  padding-right: 10px;
+}
+
 /* Apply border-radius to gallery images */
 .image-gallery-slide img {
   border-radius: 12px;
@@ -593,7 +597,6 @@ a {
 /* Navbar Layout for Mobile */
 @media (max-width: 768px) {
   .title-cont img.heart {
-    width: 200px;
     max-width: 200px;
   }
   .navbar-links li {
@@ -672,7 +675,7 @@ a {
     position: absolute;
     top: 65px;
     right: 0;
-    background-color: rgba(255, 145, 145, 0.95);
+    background: rgb(106 62 62 / 95%);
     width: 100%;
     height: 0;
     overflow: hidden;
@@ -721,4 +724,74 @@ transition: .5s ease-in-out;
 
 .cal-pink {
   background-color: #e9acac;
+}
+
+@media (max-width: 768px) {
+  .home-page {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-center {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+
+  .image-gallery-container,
+  .home-cal {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .image-gallery-slide img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .image-gallery-thumbnail {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .image-gallery-container {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-cal {
+    margin: 20px 0;
+  }
+
+  .event-list h3 {
+    font-size: 1rem;
+  }
+
+  .event-list p {
+    font-size: 0.9rem;
+  }
+}
+
+.css-13kq8ng-MuiDateCalendar-root {
+  overflow: hidden;
+  max-height: 336px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  height: 336px;
+  background-color: #e9acac !important;
+  border-radius: 10px;
+}
+
+/* ✅ For mobile: Apply the previously commented properties */
+@media (max-width: 768px) {
+.css-13kq8ng-MuiDateCalendar-root {
+  width: auto !important;
+  background-color: #e9acac;
+}
 }

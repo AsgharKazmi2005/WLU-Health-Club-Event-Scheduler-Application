@@ -111,12 +111,14 @@ const HomePage = () => {
             lazyLoad={true}
             showNav={true}
             showBullets={true}
+            additionalClass="responsive-gallery"
           />
 
           </div>
           <div className="home-cal">
             <LocalizationProvider dateAdapter={AdapterDayjs}>
               <DateCalendar
+                className="cal-pink"
                 showDaysOutsideCurrentMonth
                 fixedWeekNumber={6}
                 value={selectedDate}
