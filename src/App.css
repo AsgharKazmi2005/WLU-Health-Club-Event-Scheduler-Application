@@ -7,6 +7,10 @@ body {
   color: #ffffff;
 }
 
+html, body {
+  width: 100%;
+}
+
 #root {
   text-align: center;
 }
@@ -84,7 +88,7 @@ a {
 }
 
 /* Mobile Styling */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .navbar {
     display: flex;
             flex-direction: row;
@@ -595,7 +599,7 @@ a {
 
 
 /* Navbar Layout for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .title-cont img.heart {
     max-width: 200px;
   }
@@ -605,7 +609,7 @@ a {
 }
 
 /* Responsive Calendar Adjustments */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .calendar-container {
     width: 100%;
     overflow-x: auto;         /* Enables horizontal scrolling on mobile */
@@ -665,7 +669,7 @@ a {
 }
 
 /* Mobile-specific changes */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .hamburger {
     display: flex;
     z-index: 1100;
@@ -726,7 +730,7 @@ transition: .5s ease-in-out;
   background-color: #e9acac !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .home-page {
     flex-direction: column;
     align-items: center;
@@ -763,7 +767,7 @@ transition: .5s ease-in-out;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .home-cal {
     margin: 20px 0;
   }
@@ -789,7 +793,7 @@ transition: .5s ease-in-out;
 }
 
 /* ✅ For mobile: Apply the previously commented properties */
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
 .css-13kq8ng-MuiDateCalendar-root {
   width: auto !important;
   background-color: #e9acac;
