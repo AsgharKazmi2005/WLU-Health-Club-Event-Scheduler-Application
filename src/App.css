@@ -723,7 +723,7 @@ transition: .5s ease-in-out;
 }
 
 .cal-pink {
-  background-color: #e9acac;
+  background-color: #e9acac !important;
 }
 
 @media (max-width: 768px) {
