@@ -792,10 +792,15 @@ transition: .5s ease-in-out;
   border-radius: 10px;
 }
 
-/* ✅ For mobile: Apply the previously commented properties */
 @media (max-width: 1300px) {
 .css-13kq8ng-MuiDateCalendar-root {
   width: auto !important;
   background-color: #e9acac;
 }
+}
+
+.responsive-gallery .image-gallery-image {
+  width: 720px !important;
+  height: 480px !important;
+  object-fit: cover !important;
 }

@@ -23,6 +23,13 @@ import img8 from "../images/CPRClass/CPRClass/DSC03628.jpg";
 import img9 from "../images/CPRClass/CPRClass/DSC03633.jpg";
 import img10 from "../images/CPRClass/CPRClass/DSC03636.jpg";
 
+import img11 from "../images/CPRClass/CPRClass/IMG_0477.webp";
+import img12 from "../images/CPRClass/CPRClass/IMG_0479.webp";
+import img13 from "../images/CPRClass/CPRClass/IMG_0480.webp";
+import img14 from "../images/CPRClass/CPRClass/IMG_0478.webp";
+import img15 from "../images/CPRClass/CPRClass/IMG_0481.webp";
+import img16 from "../images/CPRClass/CPRClass/IMG_0482.webp";
+
 const HomePage = () => {
   const [events, setEvents] = useState([]);
   const [selectedDate, setSelectedDate] = useState(dayjs());
@@ -56,11 +63,17 @@ const HomePage = () => {
   useEffect(() => {
     setImages([
       { original: img1, thumbnail: img1 },
+      { original: img11, thumbnail: img11 },
       { original: img2, thumbnail: img2 },
+      { original: img12, thumbnail: img12 },
       { original: img3, thumbnail: img3 },
+      { original: img13, thumbnail: img13 },
       { original: img4, thumbnail: img4 },
+      { original: img14, thumbnail: img14 },
       { original: img5, thumbnail: img5 },
+      { original: img15, thumbnail: img15 },
       { original: img6, thumbnail: img6 },
+      { original: img16, thumbnail: img16 },
       { original: img7, thumbnail: img7 },
       { original: img8, thumbnail: img8 },
       { original: img9, thumbnail: img9 },
@@ -98,22 +111,21 @@ const HomePage = () => {
       <div className="home-page">
         <div className="home-center">
           <div className="image-gallery-container">
-          <ImageGallery
-            items={images}
-            autoPlay={true}             // Enables autoplay
-            slideInterval={5000}        // Slide changes every 3 seconds
-            slideDuration={1000}        // Slide transition duration is 1 second
-            infinite={true}             // Infinite looping
-            showPlayButton={true}       // Show play/pause button
-            showFullscreenButton={true} // Show fullscreen button
-            showThumbnails={true}       // Show thumbnails
-            thumbnailPosition="bottom"
-            lazyLoad={true}
-            showNav={true}
-            showBullets={true}
-            additionalClass="responsive-gallery"
-          />
-
+            <ImageGallery
+              items={images}
+              autoPlay={true}            
+              slideInterval={5000}       
+              slideDuration={1000}       
+              infinite={true}            
+              showPlayButton={true}      
+              showFullscreenButton={true} 
+              showThumbnails={true}      
+              thumbnailPosition="bottom"
+              lazyLoad={true}
+              showNav={true}
+              showBullets={true}
+              additionalClass="responsive-gallery"
+            />
           </div>
           <div className="home-cal">
             <LocalizationProvider dateAdapter={AdapterDayjs}>
