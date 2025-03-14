@@ -5,8 +5,7 @@ The Home Page: Consists of a stylish react slideshow built with the help of the 
 The Calendar Page: Includes a large weekly calendar (similar to Google Calender's UI) so that users can visualize the event timing and see more details about the event. Allows option to go into past or future weeks.
                    Uses the react-calendar library with custom themes.
 
-The Contact Page: A short, simple, static introduction to the W&L Heart Club board coupled with a form that can be used to contact the club email. The email service used was [] and its relative simplicity made it
-                  seamless to integrate
+The Contact Page: A short, simple, static introduction to the W&L Heart Club board coupled with a form that can be used to contact the club email. The email service used was FormSubmit and its relative simplicity                     made it seamless to integrate
 
 The Partners Page: It is imperative that the club is able to display their industry partners and this is done through this static page
 
