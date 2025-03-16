@@ -870,3 +870,98 @@ transition: .5s ease-in-out;
     height: 150px;
   }
 }
+
+/* Container for all class cards */
+.classes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* Card Styles */
+.class-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f2b8b8; /* Matches Partner Page */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.class-card:hover {
+  background: #e9acac; /* Hover Effect */
+  transform: scale(1.02);
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Class Title */
+.class-title {
+  font-size: 1.5rem;
+  color: rgb(106 62 62 / 95%);
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Class Description */
+.class-description {
+  font-size: 1rem;
+  color: #2c2a2a;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Subtitle */
+.class-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #5a3131;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Class Topics List */
+.class-topics {
+  list-style: disc;
+  padding-left: 20px;
+  color: #3d2929;
+}
+
+/* Topics paragraph styling */
+.class-topics-paragraph {
+  font-size: 1rem;
+  color: #2c2a2a;
+  line-height: 1.5;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .class-card {
+    text-align: center;
+    padding: 15px;
+  }
+
+  .class-title {
+    font-size: 1.3rem;
+  }
+
+  .class-description {
+    font-size: 0.95rem;
+  }
+
+  .class-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .class-topics {
+    padding-left: 10px;
+  }
+}
