@@ -30,6 +30,14 @@ import img14 from "../images/CPRClass/CPRClass/IMG_0478.webp";
 import img15 from "../images/CPRClass/CPRClass/IMG_0481.webp";
 import img16 from "../images/CPRClass/CPRClass/IMG_0482.webp";
 
+import img17 from "../images/CPRClass/CPRClass/IMG_0597.jpg";
+import img18 from "../images/CPRClass/CPRClass/IMG_0598.jpg";
+import img19 from "../images/CPRClass/CPRClass/IMG_0599.jpg";
+import img20 from "../images/CPRClass/CPRClass/IMG_0600.jpg";
+import img21 from "../images/CPRClass/CPRClass/IMG_0479.jpg";
+
+
+
 const HomePage = () => {
   const [events, setEvents] = useState([]);
   const [selectedDate, setSelectedDate] = useState(dayjs());
@@ -73,11 +81,15 @@ const HomePage = () => {
       { original: img5, thumbnail: img5 },
       { original: img15, thumbnail: img15 },
       { original: img6, thumbnail: img6 },
-      { original: img16, thumbnail: img16 },
+      { original: img21, thumbnail: img21 },
       { original: img7, thumbnail: img7 },
+      { original: img20, thumbnail: img20 },
       { original: img8, thumbnail: img8 },
+      { original: img19, thumbnail: img19 },
       { original: img9, thumbnail: img9 },
+      { original: img18, thumbnail: img18 },
       { original: img10, thumbnail: img10 },
+      { original: img17, thumbnail: img17 },
     ]);
   }, []);
 
