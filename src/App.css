@@ -436,13 +436,14 @@ a {
 }
 
 .home-cal {
-  margin: 50px 0px 300px 0px;
+  margin: 30px 0px 300px 0px;
 }
 
 .home-page {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  flex-direction: row;
 }
 
 .home-center {
@@ -578,7 +579,7 @@ a {
 
 .image-gallery-container {
   max-width: 750px;
-  margin-top: 50px;
+  margin-top: 30px;
   padding-right: 20px;
 }
 
@@ -612,29 +613,29 @@ a {
 @media (max-width: 1300px) {
   .calendar-container {
     width: 100%;
-    overflow-x: auto;         /* Enables horizontal scrolling on mobile */
+    overflow-x: auto;        
     padding: 10px;
     margin: 20px 0 0 0;
     border-radius: 0px;
   }
 
   .rbc-calendar {
-    min-width: 800px;         /* Forces horizontal scroll if the screen is too small */
+    min-width: 800px;         
   }
 
   .rbc-time-header-content,
   .rbc-time-content {
-    font-size: 0.75rem !important; /* Smaller text for times and headers */
+    font-size: 0.75rem !important; 
   }
 
   .rbc-event-content {
-    white-space: normal !important; /* Allow text wrapping in event titles */
-    font-size: 0.7rem !important;    /* Smaller event title text for mobile */
-    word-wrap: break-word;          /* Break long words to fit container */
+    white-space: normal !important; 
+    font-size: 0.7rem !important;   
+    word-wrap: break-word;    
   }
 
   .rbc-event {
-    padding: 3px !important;        /* Adjust padding for compact view */
+    padding: 3px !important;      
   }
 }
 
@@ -965,3 +966,24 @@ transition: .5s ease-in-out;
     padding-left: 10px;
   }
 }
+
+.mission-statement {
+  background-color: #f2b8b8;
+  color: #3d1f1f;
+  margin: 30px auto 0px auto;
+  padding: 20px 30px;
+  border-radius: 12px;
+  max-width: 75%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .mission-statement {
+    font-size: 1rem;
+    padding: 15px 20px;
+  }
+}
+

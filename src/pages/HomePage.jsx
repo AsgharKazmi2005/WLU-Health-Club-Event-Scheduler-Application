@@ -120,6 +120,16 @@ const HomePage = () => {
   return (
     <div>
       <Navbar />
+      <div className="mission-statement">
+      <p>
+        The American Heart Association (AHA) Heart Club is an organization that is
+        focused on providing the W&amp;L and Lexington community with accessible and
+        affordable CPR training as well as volunteering and donating to charities that
+        encourage heart-healthy habits. We also make sure to educate our community about
+        heart-healthy habits so that we can all keep our cardiovascular system as strong
+        as possible.
+      </p>
+    </div>
       <div className="home-page">
         <div className="home-center">
           <div className="image-gallery-container">
