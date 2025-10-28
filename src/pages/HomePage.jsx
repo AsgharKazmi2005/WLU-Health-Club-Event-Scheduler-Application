@@ -28,7 +28,6 @@ import img12 from "../images/CPRClass/CPRClass/IMG_0479.webp";
 import img13 from "../images/CPRClass/CPRClass/IMG_0480.webp";
 import img14 from "../images/CPRClass/CPRClass/IMG_0478.webp";
 import img15 from "../images/CPRClass/CPRClass/IMG_0481.webp";
-import img16 from "../images/CPRClass/CPRClass/IMG_0482.webp";
 
 import img17 from "../images/CPRClass/CPRClass/IMG_0597.jpg";
 import img18 from "../images/CPRClass/CPRClass/IMG_0598.jpg";
@@ -36,7 +35,14 @@ import img19 from "../images/CPRClass/CPRClass/IMG_0599.jpg";
 import img20 from "../images/CPRClass/CPRClass/IMG_0600.jpg";
 import img21 from "../images/CPRClass/CPRClass/IMG_0479.jpg";
 
+import img22 from "../images/CPRClass/CPRClass/IMG_1508.jpg";
+import img23 from "../images/CPRClass/CPRClass/IMG_1586.jpg";
+import img24 from "../images/CPRClass/CPRClass/IMG_1588.jpg";
+import img25 from "../images/CPRClass/CPRClass/IMG_1590.jpg";
+import img26 from "../images/CPRClass/CPRClass/IMG_2563.jpg";
 
+// NEW: club graphic
+import clubGraphic from "../images/graphic.png";
 
 const HomePage = () => {
   const [events, setEvents] = useState([]);
@@ -74,21 +80,26 @@ const HomePage = () => {
       { original: img11, thumbnail: img11 },
       { original: img2, thumbnail: img2 },
       { original: img12, thumbnail: img12 },
+      { original: img26, thumbnail: img26 },
       { original: img3, thumbnail: img3 },
       { original: img13, thumbnail: img13 },
       { original: img4, thumbnail: img4 },
+      { original: img25, thumbnail: img25 },
       { original: img14, thumbnail: img14 },
       { original: img5, thumbnail: img5 },
+      { original: img22, thumbnail: img22 },
       { original: img15, thumbnail: img15 },
       { original: img6, thumbnail: img6 },
       { original: img21, thumbnail: img21 },
       { original: img7, thumbnail: img7 },
       { original: img20, thumbnail: img20 },
       { original: img8, thumbnail: img8 },
+      { original: img23, thumbnail: img23 },
       { original: img19, thumbnail: img19 },
       { original: img9, thumbnail: img9 },
       { original: img18, thumbnail: img18 },
       { original: img10, thumbnail: img10 },
+      { original: img24, thumbnail: img24 },
       { original: img17, thumbnail: img17 },
     ]);
   }, []);
@@ -121,27 +132,27 @@ const HomePage = () => {
     <div>
       <Navbar />
       <div className="mission-statement">
-      <p>
-        The American Heart Association (AHA) Heart Club is an organization that is
-        focused on providing the W&amp;L and Lexington community with accessible and
-        affordable CPR training as well as volunteering and donating to charities that
-        encourage heart-healthy habits. We also make sure to educate our community about
-        heart-healthy habits so that we can all keep our cardiovascular system as strong
-        as possible.
-      </p>
-    </div>
+        <p>
+          The American Heart Association (AHA) Heart Club is an organization that is
+          focused on providing the W&amp;L and Lexington community with accessible and
+          affordable CPR training as well as volunteering and donating to charities that
+          encourage heart-healthy habits. We also make sure to educate our community about
+          heart-healthy habits so that we can all keep our cardiovascular system as strong
+          as possible.
+        </p>
+      </div>
       <div className="home-page">
         <div className="home-center">
           <div className="image-gallery-container">
             <ImageGallery
               items={images}
-              autoPlay={true}            
-              slideInterval={5000}       
-              slideDuration={1000}       
-              infinite={true}            
-              showPlayButton={true}      
-              showFullscreenButton={true} 
-              showThumbnails={true}      
+              autoPlay={true}
+              slideInterval={5000}
+              slideDuration={1000}
+              infinite={true}
+              showPlayButton={true}
+              showFullscreenButton={true}
+              showThumbnails={true}
               thumbnailPosition="bottom"
               lazyLoad={true}
               showNav={true}
@@ -196,6 +207,27 @@ const HomePage = () => {
               )}
             </div>
           </div>
+        </div>
+
+        {/* NEW: Club graphic placed BELOW the calendar/images */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginTop: "0px",
+            marginBottom: "16px",
+          }}
+        >
+          <img
+            src={clubGraphic}
+            alt="Today: 256 Heart Clubs map and club spotlights for Washington & Lee Heart Club"
+            style={{
+              maxWidth: "100%",
+              height: "auto",
+              borderRadius: "8px",
+              boxShadow: "0 4px 14px rgba(0,0,0,0.12)",
+            }}
+          />
         </div>
       </div>
       <Footer />

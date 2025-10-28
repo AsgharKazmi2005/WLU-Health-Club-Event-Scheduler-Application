@@ -5,6 +5,7 @@ import PartnerCard from "../components/PartnerCard";
 import traveller from "../images/Partners/traveller.webp";
 import bfg from "../images/Partners/bfg.webp";
 import gslc from "../images/Partners/gslc.png";
+import manly from "../images/Partners/manly.png";
 
 function PartnerPage() {
   const partners = [
@@ -22,7 +23,11 @@ function PartnerPage() {
       image: gslc,
       name: "Good Shepard Lutheran Church",
       description: "",
-    }
+    },
+    {image: manly,
+      name: "Manly Memorial Baptist Church",
+      description: "",
+    },
   ];
 
   return (
