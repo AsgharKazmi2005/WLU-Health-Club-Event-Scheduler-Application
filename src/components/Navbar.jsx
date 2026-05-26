@@ -81,6 +81,28 @@ function Navbar() {
               Classes
             </NavLink>
           </li>
+          <li>
+            <NavLink
+              to="/news"
+              className={({ isActive }) =>
+                `nav-link nav-headers ${isActive ? "active" : ""}`
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              News
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/gallery"
+              className={({ isActive }) =>
+                `nav-link nav-headers ${isActive ? "active" : ""}`
+              }
+              onClick={() => setIsOpen(false)}
+            >
+              Gallery
+            </NavLink>
+          </li>
         </ul>
       </nav>
 

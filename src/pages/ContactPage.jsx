@@ -27,17 +27,17 @@ function ContactPage() {
           />
 
           <Portrait
-            image={David}
-            name="David Shepherd"
+            image={Elizabeth}
+            name="Elizabeth Sawicki"
             position="Vice President"
-            description="My name is David Shepherd, and I’m the Vice President of the AHA Heart Club at Washington and Lee University. I’m a sophomore Neuroscience major looking for ways to improve my community, so I’m extremely grateful for the opportunity to spread health consciousness and skills to the people of Lexington, VA. When I’m not working, I like to draw, read, and explore new cultural experiences!"
+            description="My name is Elizabeth Sawicki! I am in the class of 2029, majoring in Biology on a pre-veterinary track. I love being on the Women's Track and Field Team, I am a Hurdler and Triple Jumper."
           />
 
           <Portrait
-            image={Elizabeth}
-            name="Elizabeth Sawicki"
+            image={David}
+            name="David Shepherd"
             position="Treasurer"
-            description="My name is Elizabeth Sawicki! I am in the class of 2029, majoring in Biology on a pre-veterinary track. I love being on the Women's Track and Field Team, I am a Hurdler and Triple Jumper."
+            description="My name is David Shepherd, and I’m the Treasurer of the AHA Heart Club at Washington and Lee University. I’m a sophomore Neuroscience major looking for ways to improve my community, so I’m extremely grateful for the opportunity to spread health consciousness and skills to the people of Lexington, VA. When I’m not working, I like to draw, read, and explore new cultural experiences!"
           />
 
           <Portrait

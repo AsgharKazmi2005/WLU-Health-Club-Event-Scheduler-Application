@@ -11,35 +11,11 @@ import { PickersDay } from "@mui/x-date-pickers/PickersDay";
 import { DateCalendar } from "@mui/x-date-pickers/DateCalendar";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
+import { Link } from "react-router-dom";
+import NewsCard from "../components/NewsCard";
+import newsItems from "../data/newsItems";
 
-import img1 from "../images/CPRClass/CPRClass/DSC03608.jpg";
-import img2 from "../images/CPRClass/CPRClass/DSC03610.jpg";
-import img3 from "../images/CPRClass/CPRClass/DSC03611.jpg";
-import img4 from "../images/CPRClass/CPRClass/DSC03613.jpg";
-import img5 from "../images/CPRClass/CPRClass/DSC03619.jpg";
-import img6 from "../images/CPRClass/CPRClass/DSC03621.jpg";
-import img7 from "../images/CPRClass/CPRClass/DSC03625.jpg";
-import img8 from "../images/CPRClass/CPRClass/DSC03628.jpg";
-import img9 from "../images/CPRClass/CPRClass/DSC03633.jpg";
-import img10 from "../images/CPRClass/CPRClass/DSC03636.jpg";
-
-import img11 from "../images/CPRClass/CPRClass/IMG_0477.webp";
-import img12 from "../images/CPRClass/CPRClass/IMG_0479.webp";
-import img13 from "../images/CPRClass/CPRClass/IMG_0480.webp";
-import img14 from "../images/CPRClass/CPRClass/IMG_0478.webp";
-import img15 from "../images/CPRClass/CPRClass/IMG_0481.webp";
-
-import img17 from "../images/CPRClass/CPRClass/IMG_0597.jpg";
-import img18 from "../images/CPRClass/CPRClass/IMG_0598.jpg";
-import img19 from "../images/CPRClass/CPRClass/IMG_0599.jpg";
-import img20 from "../images/CPRClass/CPRClass/IMG_0600.jpg";
-import img21 from "../images/CPRClass/CPRClass/IMG_0479.jpg";
-
-import img22 from "../images/CPRClass/CPRClass/IMG_1508.jpg";
-import img23 from "../images/CPRClass/CPRClass/IMG_1586.jpg";
-import img24 from "../images/CPRClass/CPRClass/IMG_1588.jpg";
-import img25 from "../images/CPRClass/CPRClass/IMG_1590.jpg";
-import img26 from "../images/CPRClass/CPRClass/IMG_2563.jpg";
+import { sliderImages } from "../data/galleryImages";
 
 // NEW: club graphic
 import clubGraphic from "../images/graphic.png";
@@ -75,33 +51,9 @@ const HomePage = () => {
   }, [selectedDate, events]);
 
   useEffect(() => {
-    setImages([
-      { original: img1, thumbnail: img1 },
-      { original: img11, thumbnail: img11 },
-      { original: img2, thumbnail: img2 },
-      { original: img12, thumbnail: img12 },
-      { original: img26, thumbnail: img26 },
-      { original: img3, thumbnail: img3 },
-      { original: img13, thumbnail: img13 },
-      { original: img4, thumbnail: img4 },
-      { original: img25, thumbnail: img25 },
-      { original: img14, thumbnail: img14 },
-      { original: img5, thumbnail: img5 },
-      { original: img22, thumbnail: img22 },
-      { original: img15, thumbnail: img15 },
-      { original: img6, thumbnail: img6 },
-      { original: img21, thumbnail: img21 },
-      { original: img7, thumbnail: img7 },
-      { original: img20, thumbnail: img20 },
-      { original: img8, thumbnail: img8 },
-      { original: img23, thumbnail: img23 },
-      { original: img19, thumbnail: img19 },
-      { original: img9, thumbnail: img9 },
-      { original: img18, thumbnail: img18 },
-      { original: img10, thumbnail: img10 },
-      { original: img24, thumbnail: img24 },
-      { original: img17, thumbnail: img17 },
-    ]);
+    setImages(
+      sliderImages.map((src) => ({ original: src, thumbnail: src }))
+    );
   }, []);
 
   const ServerDay = (props) => {
@@ -159,6 +111,24 @@ const HomePage = () => {
               showBullets={true}
               additionalClass="responsive-gallery"
             />
+            <Link to="/gallery" className="gallery-link-cta">
+              View full gallery
+              <svg
+                viewBox="0 0 24 24"
+                width="16"
+                height="16"
+                fill="none"
+                aria-hidden="true"
+              >
+                <path
+                  d="M5 12h14M13 5l7 7-7 7"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </Link>
           </div>
           <div className="home-cal">
             <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -208,6 +178,21 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+
+        {/* News cards: compact previews below the calendar/image gallery */}
+        <section className="home-news">
+          <div className="home-news-header">
+            <h2 className="home-news-title">In the News</h2>
+            <Link to="/news" className="home-news-link">
+              View all →
+            </Link>
+          </div>
+          <div className="home-news-grid">
+            {newsItems.map((item, index) => (
+              <NewsCard key={index} {...item} variant="compact" />
+            ))}
+          </div>
+        </section>
 
         {/* NEW: Club graphic placed BELOW the calendar/images */}
         <div

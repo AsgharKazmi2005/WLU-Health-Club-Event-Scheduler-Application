@@ -7,6 +7,8 @@ import CalendarPage from "./pages/CalendarPage";
 import ContactPage from "./pages/ContactPage";
 import PartnerPage from "./pages/PartnerPage";
 import ClassesPage from "./pages/ClassesPage";
+import NewsPage from "./pages/NewsPage";
+import GalleryPage from "./pages/GalleryPage";
 
 const App = () => {
   return (
@@ -19,6 +21,8 @@ const App = () => {
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/partners" element={<PartnerPage />} />
         <Route path="/classes" element={<ClassesPage />} />
+        <Route path="/news" element={<NewsPage />} />
+        <Route path="/gallery" element={<GalleryPage />} />
       </Routes>
     </Router>
   );

@@ -20,12 +20,13 @@ function PartnerPage() {
       description: "W&L AHA Heart Club is partnered with Beat For Good, an organization created in direct contact with the AHA. Our partnership is with connection to the AHA Heart Club at Cornell University and big thank you to them! Beat For Good has raised over $2000 dollars towards charitable causes that span multiple months and events. The AHA Heart Club at W&L will also participate in their fundraisers and stay tuned for more information on the fundraiser in April!",
     },
     {
-      image: gslc,
-      name: "Good Shepard Lutheran Church",
+      image: manly,
+      name: "Manly Memorial Baptist Church",
       description: "",
     },
-    {image: manly,
-      name: "Manly Memorial Baptist Church",
+    {
+      image: gslc,
+      name: "Good Shepherd Lutheran Church",
       description: "",
     },
   ];
