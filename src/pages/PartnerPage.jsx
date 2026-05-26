@@ -22,7 +22,7 @@ function PartnerPage() {
     {
       image: manly,
       name: "Manly Memorial Baptist Church",
-      description: "",
+      description: "Manly Memorial Baptist Church has a history as rich as the community in which it exists. The church was founded in 1841, originally constructed by John Jordan, one of Lexington's earliest builders and entrepreneurs. The original membership consisted of 12 women and 4 men, with the Reverend Cornelius Tyree as the first pastor. This original building was located on Nelson Street between Main and Randolph Streets. It was not until 1920 that the Sanctuary at the current location was completed. The W&L AHA Heart Club has helped provide the church with heart-healthy food and has offered CPR classes at this location! Events happen in October of every year.",
     },
     {
       image: gslc,
